@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: reactapp
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: reactapp
+        tier: frontend
+    spec:
+      containers:
+      - name: reactapp
+        image: reactapp:v1
+        ports:
+        - containerPort: 3000

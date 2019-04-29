@@ -24,3 +24,9 @@ URLS:
     minikube service list
 
     minikube service reactapp --url
+
+Docker Hub:
+
+    docker tag [IMAGE ID] anoneric/reactjs-minikube-fe:latest
+ 
+    docker push anoneric/reactjs-minikube-fe
